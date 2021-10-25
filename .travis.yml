@@ -1,0 +1,10 @@
+language: node_js
+
+sudo: required
+
+services:
+  - docker
+
+script:
+  -docker build -t ax13656/node2
+  -docker images ax13656/node2
