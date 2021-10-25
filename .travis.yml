@@ -16,4 +16,4 @@ deploy:
   provider: script
   script: docker push chnaydar/testnode
   on:
-    branch: master
+    branch: main
