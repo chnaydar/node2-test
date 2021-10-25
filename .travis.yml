@@ -14,6 +14,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push chnaydar/testnode
+  script: docker push chnaydar/node2
   on:
     branch: main
