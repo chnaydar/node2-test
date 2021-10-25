@@ -8,3 +8,12 @@ services:
 script:
   - docker build -t chnaydar/node2 .
   - docker images chnaydar/node2
+
+before_deploy:
+  - docker login -u chnaydar -p installe
+
+deploy:
+  provider: script
+  script: docker push chnaydar/testnode
+  on:
+    branch: master
